@@ -16,4 +16,9 @@ public class LoginController {
         return "/login";
     }
 
+    @GetMapping("/")
+    public String honePage() {
+            return "redirect:/login";
+    }
+
 }
